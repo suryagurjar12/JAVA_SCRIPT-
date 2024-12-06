@@ -104,6 +104,62 @@
  //generate a username for them based on the input .
   //start username with @ followed by thair fullname and ending whith  the full name lenght 
 
-let fullName = prompt("enter the Fullname without space");
-let userName = "@" + fullName + fullName.length;
-console.log(userName);
+// let fullName = prompt("enter the Fullname without space");
+// let userName = "@" + fullName + fullName.length;
+// console.log(userName);
+
+// ----------------Array-------------------//
+
+// collections of items 
+
+// let marks= [97,23,75,64,36];
+// console.log(marks);
+// console.log(marks.length)   // array lenght
+
+
+// --------stirng type array ---------------------//
+
+// let student=["ram","surya","siddharth","mehak","rahul","ankit"];
+// console.log(student);
+// console.log(student[2   ]="Gurjar");
+
+//------------for loop useing array---------------------//
+// let names=['ram','surya','siddh','mehak','rahul']
+
+// for (let i = 0; i < names.length; i++) {
+//    console.log(names[i]);
+//}
+
+//-------- using for of loop -----//
+
+// let cities =['mumbai','pune','hydrabad','gurgaon','dehli']
+
+// for( let city of cities ){
+//    console.log(city);
+// }
+
+//------------practice----------------------
+
+// Q.1 for a given array with marks of student [85,97,44, 37, 76,60]. FIND THE AVERAGE marks of th entier class 
+
+// let marks = [85, 97, 44, 37, 76, 60];
+// let sum =0;
+// for (let val of marks){
+//    sum += val;
+
+// }
+// let avg= sum/ marks.length;
+// console.log(`average marks of the class = ${avg}`);
+// console.log(sum);
+
+// Q.2 for a given array with price of 5 items [250, 645, 300, 900,50] All items have an offer of 10% off on items ,Change the array to store final after applying the offer ?
+
+let items =[250, 645, 300, 900,50];
+
+for (let i= 0; i<items.length; i++){
+   console.log(items[i]); // array ki purani value ko dekhne ke liye use kiya hai 
+   let offer= items[i]/10;
+   items[i] -= offer ;
+
+}
+console.log(items);
